@@ -1,3 +1,4 @@
+/* Fonts */
 @font-face{
     font-family: "Montserrat";
     font-style: normal;
@@ -19,6 +20,7 @@
     src: url("fonts/montserrat/Montserrat-Italic.ttf");
 }
 
+/* Elements */
 *{
 	box-sizing: border-box;
 	font-family: Montserrat, Arial, Helvetica, sans-serif;
@@ -27,8 +29,120 @@
 body {
     background-color: #222222;
     color: #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
+/* Typography */
 h1, h2, h3 {
     color: #e6ba5a;
+    flex-basis: 100%;
+}
+
+h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    border-bottom: 2px solid #e6ba5a;
+    padding-bottom: 0.25rem;
+}
+
+/* Components */
+footer,
+main,
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+}
+
+nav > ul,
+footer > ul {
+    align-items: center;
+    display: flex;
+    flex-basis: 60rem;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 2rem;
+    padding: 0;
+}
+
+nav > ul > li,
+footer > ul > li {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: center;
+    text-align: center;
+}
+
+nav > ul > li:first-of-type,
+footer > ul > li:first-of-type {
+    justify-content: start;
+    text-align: left;
+}
+
+nav > ul > li:last-of-type,
+footer > ul > li:last-of-type {
+    justify-content: end;
+    text-align: right;
+}
+
+header {
+    align-items: center;
+    background-image: url("images/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-basis: 31rem;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: center;
+}
+
+header > h1 {
+    flex-basis: auto;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 4px #000000;
+}
+
+header > p {
+    font-size: 2rem;
+    margin-top: 0;
+    text-shadow: 0 0 4px #000000;
+}
+
+main > div {
+    display: flex;
+    flex-basis: 60rem;
+    flex-direction: column;
+    margin: 0 2rem;
+}
+
+main > div > section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main > div > section > article {
+    flex-basis: 20rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+footer {
+    margin-bottom: 1rem;
 }
