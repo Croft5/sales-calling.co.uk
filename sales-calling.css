@@ -104,6 +104,7 @@ nav {
 
 nav {
     background-color: rgba(0, 0, 0, 0.6);
+    padding: 0 1rem;
     position: fixed;
     width: 100%;
 }
@@ -113,7 +114,7 @@ footer {
     color: #888888;
     font-size: 0.8rem;
     margin-top: 2rem;
-    padding: 1rem 0;
+    padding: 1rem;
 }
 
 nav > ul,
@@ -178,7 +179,7 @@ header {
     flex-grow: 1;
     flex-shrink: 1;
     justify-content: center;
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 
 header > h1 {
