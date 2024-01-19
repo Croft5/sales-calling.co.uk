@@ -238,12 +238,11 @@ article.banner {
 }
 
 aside.image {
-    background-position: center;
+    background-position: center right;
     background-size: cover;
-    border-radius: 50%;
     height: 15rem;
     margin: 1rem;
-    width: 15rem;
+    width: 20rem;
 }
 
 div.image {
