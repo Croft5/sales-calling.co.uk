@@ -107,15 +107,13 @@ nav {
 }
 
 nav {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #222222;
     padding: 0 1rem;
-    position: fixed;
-    width: 100%;
 }
 
 footer {
     background-color: #222222;
-    color: #888888;
+    color: #999999;
     font-size: 0.8rem;
     margin-top: 2rem;
     padding: 1rem;
